@@ -1,0 +1,23 @@
+.task-container{
+margin: 20px auto;
+  background-color: gray;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 14px;
+}
+
+.task-btn{
+padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.task-btn:hover{
+  transition-duration: 1s;
+  color: white;
+  background-color: red;
+}

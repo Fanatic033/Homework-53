@@ -1,13 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import AddTaskForm from './Components/AddTaskForm/AddTaskForm.tsx';
+import Task from './Components/Task/Task.tsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <AddTaskForm/>
+      <Task/>
+      <Task/>
+      <Task/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
