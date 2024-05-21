@@ -1,9 +1,13 @@
 import "./Task.css"
-
-const Task = () => {
+import React from 'react';
+interface TaskProps {
+  text: string;
+  id: string
+}
+const Task:React.FC<TaskProps> = ({text,id}) => {
   return (
     <div className="task-container">
-      <strong>TASK ONE</strong>
+      <strong>{id} {text}</strong>
       <button className={'task-btn'} type={'button'}>Delete</button>
     </div>
   );
