@@ -1,10 +1,12 @@
-import "./Task.css"
+import './Task.css';
 import React from 'react';
-interface TaskProps {
+
+interface TaskProps  extends  React.PropsWithChildren{
   text: string;
-  id: string
+  id: string;
 }
-const Task:React.FC<TaskProps> = ({text,id}) => {
+
+const Task: React.FC<TaskProps> = ({text, id}) => {
   return (
     <div className="task-container">
       <strong>{id} {text}</strong>
