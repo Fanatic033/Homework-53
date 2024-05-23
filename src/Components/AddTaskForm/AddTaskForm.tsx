@@ -1,13 +1,15 @@
 import './AddTaskForm.css'
 import React from 'react';
-interface Props{
+import "../Task/Task.tsx"
+interface Props {
   currentTask:string,
- changeText: React.ChangeEventHandler<HTMLInputElement>
+ changeText: React.ChangeEventHandler<HTMLInputElement>,
+  addTask:(e: React.FormEvent<HTMLFormElement>) => void;
 }
 
-const AddTaskForm:React.FC<Props> = ({currentTask, changeText}) => {
+const AddTaskForm:React.FC<Props> = ({currentTask, changeText, addTask}) => {
     return (
-        <form>
+        <form onSubmit={addTask}>
             <input
               value={currentTask}
               className={'form-input'}
@@ -15,7 +17,7 @@ const AddTaskForm:React.FC<Props> = ({currentTask, changeText}) => {
               placeholder="Add Task"
               onChange={changeText}
             />
-            <button className={'form-btn'} type="submit">Add</button>
+            <button className={'form-btn'} type="submit" >Add</button>
         </form>
     );
 };

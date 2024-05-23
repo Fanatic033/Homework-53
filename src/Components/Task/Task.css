@@ -21,3 +21,8 @@ padding: 10px;
   color: white;
   background-color: red;
 }
+
+.ident{
+  font-weight: bold;
+  font-size: 16px;
+}
