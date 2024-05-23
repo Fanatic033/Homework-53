@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 .form-btn:hover{
-  background-color: aqua;
+  background: rgba(123, 217, 232, 0.9);
   transition-duration: 1s;
   border: 2px solid cadetblue;
  }

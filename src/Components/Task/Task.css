@@ -1,12 +1,13 @@
 .task-container{
 margin: 20px auto;
-  background-color: gray;
+  background: rgba(150, 200, 207, 0.9);
   width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   border-radius: 14px;
+  box-shadow: 10px 5px 5px #90aab5;
 }
 
 .task-btn{
